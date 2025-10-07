@@ -17,7 +17,7 @@ function App() {
   const [favoritos, setFavoritos] = useState<Produto[]>([])
 
   useEffect(() => {
-    fetch('https://ebac-fake-api.vercel.app/api/ebac_sports')
+    fetch('https://api-ebac.vercel.app/api/ebac_sports')
       .then((res) => res.json())
       .then((res) => setProdutos(res))
   }, [])

@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${cores.corTexto}
   }
 
-  body {
+  body {'
     background-color: ${cores.corFundo};
     padding-bottom: 80px;
   }

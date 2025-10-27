@@ -15,24 +15,12 @@ export type Produto = {
 }
 
 function App() {
-  const [produtos, setProdutos] = useState<Produto[]>([])
-
-  useEffect(() => {
-    fetch('https://api-ebac.vercel.app/api/ebac_sports')
-      .then((res) => res.json())
-      .then((res) => setProdutos(res))
-  }, [])
-
-  function favoritar() {
-    console.log('testando')
-  }
-
   return (
     <Provider store={store}>
       <GlobalStyle />
       <div className="container">
         <Header />
-        <Produtos produtos={produtos} />
+        <Produtos />
       </div>
     </Provider>
   )
